@@ -7,8 +7,8 @@ import {Component} from '@angular/core';
 })
 export class EmployeeComponent {
   columnSpan = 2;
-  firstName = 'Tom';
-  lastName = 'Moody';
+  firstName: string = 'Tom';
+  lastName : string = 'Moody';
   gender = 'Male';
   age = 20;
   showDetails = false;
