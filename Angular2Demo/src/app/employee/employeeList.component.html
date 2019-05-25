@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>The Form</title>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Annual Salary</th>
+                    <th>Date of Birth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let employee of employees">
+                    <td>{{employee.code}}</td>
+                    <td>{{employee.name}}</td>
+                    <td>{{employee.gender}}</td>
+                    <td>{{employee.annualSalary}}</td>
+                    <td>{{employee.dataOfBirth}}</td>
+                </tr>
+                <tr *ngIf="!employees || employees.length==0">
+                    <td colspan="5"> No Employee to display</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 import {EmployeeComponent} from './employee/employee.component';
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
+import { EmployeeListComponent } from './employee/employeeList.component';
 
 @NgModule({
   declarations: [
-    AppComponent, EmployeeComponent
-  ],
+    AppComponent, EmployeeComponent, EmployeeListComponent],
   imports: [
     BrowserModule, FormsModule
   ],
