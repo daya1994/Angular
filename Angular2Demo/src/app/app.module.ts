@@ -4,10 +4,11 @@ import {EmployeeComponent} from './employee/employee.component';
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import { EmployeeListComponent } from './employee/employeeList.component';
+import { EmployeeTitlePipe } from './employee/employeeTitle.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent, EmployeeComponent, EmployeeListComponent],
+    AppComponent, EmployeeComponent, EmployeeListComponent, EmployeeTitlePipe],
   imports: [
     BrowserModule, FormsModule
   ],
