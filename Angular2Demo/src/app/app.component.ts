@@ -5,7 +5,16 @@ import {Component} from '@angular/core';
     selector : 'app-root',
     template : '<list-employee></list-employee>'
 
-    
+    /*template: 'Name : <input [(ngModel)]= "name" />'+
+      '<br/> ' +
+      'You Entered: {{name}} ' */
+    /*template : `<my-employee></my-employee>`*/
+    /*template : `<button (click)='onClick()'> Click Me </button>`*/
+    /*template : '<div> ' +
+      '<h1>{{pageHeader}}  </h1> ' +
+      '<img src="imagePath"/>' +
+      '<my-employee></my-employee> ' +
+      '</div> '*/
   })
 
 export class AppComponent {
