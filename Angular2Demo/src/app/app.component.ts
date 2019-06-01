@@ -1,9 +1,14 @@
 import {Component} from '@angular/core';
+import { SimpleComponent } from './Others/simple.component';
 
 @Component(
   {
     selector : 'app-root',
-    template : '<list-employee></list-employee>'
+    template : `Your Text : <input type='text' [(ngModel)]='userText'/> 
+                <br/> <br/>
+                <simple [simpleInput]='userText'></simple>
+                `
+    //template : '<list-employee></list-employee>'
 
     /*template: 'Name : <input [(ngModel)]= "name" />'+
       '<br/> ' +
@@ -18,7 +23,9 @@ import {Component} from '@angular/core';
   })
 
 export class AppComponent {
-  name: string = 'Tom';
+  userText : string ='Pragim';
+  
+  //name: string = 'Tom';
   // onClick(){
   //   console.log('Button Clicked');
   // }
